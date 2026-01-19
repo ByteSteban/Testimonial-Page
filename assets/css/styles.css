@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.principal-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+@media (min-width: 1024px) {
+    .principal-container{
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        min-height: 100vh;
+    }   
+}
+
+.review-comments{
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 20px;
+}
+@media (min-width: 1024px) {
+    .review-comments{
+        grid-template-rows: 1fr 1fr;
+        min-height: 100vh;
+    }   
+}
+
+
+.review-comment-one{
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+}
+.review-comment-two{
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+}
