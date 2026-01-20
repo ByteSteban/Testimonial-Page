@@ -3,11 +3,37 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: 'Sora';
+    src: url('../assets/fonts/Sora-VariableFont_wght.ttf');
+}
+.author-info {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 16px;
+        color: rgb(55, 65, 81);
+      }
+
+      .author-info a {
+        color: rgb(55, 65, 81);
+        text-decoration: underline;
+      }
+      .author-info a:hover {
+        color: rgb(61, 130, 240);
+      }
+body{
+    font-family: 'Sora', sans-serif;
+    font-size: 16px;
+    background-color: #FAFAF9;
+    color: #525252;
+}
 
 .principal-container{
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 @media (min-width: 1024px) {
     .principal-container{
@@ -17,11 +43,62 @@
     }   
 }
 
+/* Review Descrption */
+
+.review-left-side{
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 80px;
+}
+.review-logo{
+    background-color: #F5C044;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.review-img{
+    width: 30px;
+    height: 30px;
+    filter: brightness(2);
+}
+.review-description{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+     .review-title{
+        font-size: 2.25rem;
+        color: #18181B;
+    }
+    .review-text{
+        font-size: 1.25rem;
+        line-height: 30px;
+    }
+    .review-benefits-list{
+        font-size: 1rem;
+        line-height: 30px;
+        padding-left: 20px;
+        list-style: none;
+    }
+    li{
+        display: block;
+        background-image: url(/assets/img/Done_ring_round_fill.svg);
+        background-repeat: no-repeat;
+        background-position: left;
+        padding-left: 30px;
+    }
+/* Review Comments */
+
 .review-comments{
     display: grid;
     grid-template-rows: 1fr;
     align-items: center;
-    gap: 20px;
+    margin: 0 80px 0 80px;
+    gap: 10px;
 }
 @media (min-width: 1024px) {
     .review-comments{
@@ -30,14 +107,58 @@
     }   
 }
 
-
 .review-comment-one{
     display: flex;
     flex-direction: column;
     justify-self: flex-end;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+    padding: 30px;
+    max-width: 400px;
+    gap: 10px;
+    background-color: #FFFFFF;
+}
+.review-comment-header{
+    display: flex;
+    align-items: center;
+}
+.google-logo{
+    width: 100px;
+    margin-right: 20px;
+}
+.stars-container{
+    display: flex;
+    gap: 5px;
+}
+.star-img{
+    width: 25px;
+    height: 25px;
+}
+.review-comment-description{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.review-comment-author{
+    font-size: 1.25rem;
+    color: #18181B;
+}
+.review-comment-text{
+    font-size: 1rem;
+    color: #52525A;
 }
 .review-comment-two{
     display: flex;
     flex-direction: column;
     justify-self: flex-start;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+    padding: 30px;
+    max-width: 400px;
+    gap: 10px;
+    background-color: #FFFFFF;
+}
+.meta-logo{
+    width: 100px;
+    margin-right: 20px;
 }
